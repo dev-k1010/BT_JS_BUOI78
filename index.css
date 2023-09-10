@@ -1,0 +1,29 @@
+.container {
+  background-color: darkcyan;
+  height: 100%;
+  margin-top: 30px;
+  padding: 10px;
+}
+.container-batTap1 {
+  padding-top: 10px;
+}
+.btn.btn-success {
+  margin-top: 10px;
+}
+h5 {
+  padding-top: 10px;
+  color: blanchedalmond;
+}
+h4 {
+  text-align: center;
+  margin: 20px 0;
+}
+h6 {
+  padding-top: 10px;
+  background-color: white;
+  margin: 10px 0;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}

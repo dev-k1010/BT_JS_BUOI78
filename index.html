@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>NHẬP MẢNG CẦN TÍNH</h4>
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          id="number"
+          placeholder="Nhập số n..."
+        />
+        <button class="btn btn-success" onclick="nhapSo()">Nhập</button>
+        <h5>Mảng của bạn là</h5>
+        <div id="divInMang" class="inMang">
+          <h6>
+            <i class="fa fa-hand-point-right"></i>
+            <span id="xuatMang" class="xuatTien"></span>
+          </h6>
+        </div>
+      </div>
+      <!-- 1 -->
+      <h4>TÍNH TỔNG SỐ DƯƠNG TRONG MẢNG</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Tổng: <span id="sumArray" class=""> </span></h6>
+      </div>
+      <!-- 2 -->
+      <h4>ĐẾM SỐ DƯƠNG</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Có: <span id="demSoChan" class=""> </span></h6>
+      </div>
+      <!-- 3 -->
+      <h4>TÌM SỐ NHỎ NHẤT</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Số nhỏ nhất là: <span id="timSoNhoNhat" class=""> </span></h6>
+      </div>
+      <!-- 4 -->
+      <h4>TÌM SỐ DƯƠNG NHỎ NHẤT</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>
+          Số dương nhỏ nhất là: <span id="soDuongNhoNhat" class=""> </span>
+        </h6>
+      </div>
+      <!-- 5 -->
+      <h4>TÌM SỐ CHẴN CUỐI CÙNG</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Số chẵn cuối cùng: <span id="soChanCuoi" class=""> </span></h6>
+      </div>
+      <!-- 6 -->
+      <h4>ĐỔI CHỖ</h4>
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          id="numberOne"
+          placeholder="Nhập vị trí thứ 1"
+        />
+        <div class="form-group">
+          <label for=""></label>
+          <input
+            type="text"
+            class="form-control"
+            id="numberTwo"
+            placeholder="Nhập vị trí thứ 2"
+          />
+          <button class="btn btn-success" onclick="doiCho()">Đổi</button>
+        </div>
+        <div id="divKetQua" class="ketQuaTong">
+          <h6>Mảng sau khi đổi: <span id="mangDoiCho" class=""> </span></h6>
+        </div>
+      </div>
+      <!-- 7 -->
+      <h4>SẮP XẾP TĂNG DẦN</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>
+          Mảng sau khi sắp xếp: <span id="sapXepTangDan" class=""> </span>
+        </h6>
+      </div>
+      <!-- 8 -->
+      <h4>TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Số nguyên tố đầu tiên: <span id="soDauTien" class=""> </span></h6>
+      </div>
+      <!-- 9 -->
+      <h4>ĐẾM SỐ NGUYÊN</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>Có: <span id="soNguyen" class=""> </span></h6>
+      </div>
+      <!-- 10 -->
+      <h4>SO SÁNH SỐ LƯỢNG SỐ ÂM VÀ SỐ DƯƠNG</h4>
+      <div id="divKetQua" class="ketQuaTong">
+        <h6>
+          <span id="soSanhSo" class=""> </span>
+        </h6>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
