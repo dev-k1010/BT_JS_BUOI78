@@ -85,11 +85,11 @@ function nhapSo() {
     if (soDuong > soAm) {
       soSanh = "Số dương > Số âm";
     }
+    if (soDuong == soAm) {
+      soSanh = "Số dương = Số âm";
+    }
     if (soDuong < soAm) {
       soSanh = "Số dương < Số âm";
-    }
-    if ((soDuong = soAm)) {
-      soSanh = "Số dương = Số âm";
     }
     document.getElementById("sumArray").innerHTML = tongSoChan;
     document.getElementById("demSoChan").innerHTML = `${demSoDuong} số dương`;
